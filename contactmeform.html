@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            border-color:white;
+            border-style:double;
+            margin: 5px;
+            animation: borderanimo 2s infinite;
+        }
+        @keyframes borderanimo{
+            from{border-color: white;}
+            to{border-color: pink;box-shadow: 4px 4px 8px 16px red;}
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            margin: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(250, 9, 9);
+            font-size: 1.03rem;
+        }
+
+        .contactform {
+            margin: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 600;
+            font-size: 30px;
+            margin-left: 300px;
+        }
+
+        p {
+            text-shadow: 2px 4px 4px red;
+            font-weight: 20px;
+            animation: spark 2s infinite;
+        }
+
+        @keyframes spark {
+            from {
+                text-shadow: 8pxpx 4p 8px red;
+            }
+
+            to {
+                text-shadow: 4px 4px 14px gold;
+            }
+        }
+
+        input {
+            height: 30px;
+        }
+
+        .fotter {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            margin: 40px;
+        }
+
+        .fotter li {
+            list-style: none;
+        }
+
+        .fotter li:hover {
+            font-size: 1.05rem;
+            color: red;
+        }
+
+        button {
+            background-color: yellow;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            font-size: 1.05rem;
+            color: red;
+        }
+
+        #send {
+            padding: 15px;
+            background-color: red;
+            color: white;
+            font-size: 18px;
+            border: 0px;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Divyanshu Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="contactmeform.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <p align="center">
+            <font size="40px" color="white" face="arial"><u>FORM</u></font>
+        </p>
+        <form class="contactform" action="mailto:divkamboj124@gmail.com" method="post">
+            <label>First name<input type="text" name=" first  name: " placeholder=" Enter name" required></label>
+            &nbsp;
+            <label>Last name<input type="text" name=" last name: " placeholder=" Enter last  name" required></label>
+            <br>
+            </br>
+            <ol> GENDER<br>
+                </br>
+                <li><label>Male<input type="radio" name="gender" name="chk" value="male"></label></li>
+                <li><label>Female<input type="radio" name="female" name="chk" value="female"></label></li>
+                <li><label>Other<input type="radio" name="other" name="chk" value="other"></label></li>
+            </ol>
+            <br>
+            </br>
+            <label>Email<input type="email" name="email" placeholder="enter your email" required></label>
+            <br>
+            </br>
+            <label>
+                Mobile number
+                <select id="Mobile number" name="country code">
+                    <option>(INDIA)+91</option>
+                    <option>(CANADA)+1</option>
+                    <option>(FRANCE)+33</option>
+                    <option>(GERMANY)+49</option>
+                    <option>(HONG KONG)+852</option>
+                    <option>(ITALY)+39</option>
+                    <option>(JAPAN)+81</option>
+                    <option>(MEXICO)+52</option>
+                    <option>(NEW ZEALAND)+64</option>
+                    <option>(PAKISTAN)+92</option>
+                    <option>(RUSSIA)+7</option>
+                    <option>(SINGAPORE)+65</option>
+                    <option>(UKRAINE)+380</option>
+                    <option>(UK)+44</option>
+                    <option>(UNITED STATES)+1</option>
+                    <option>(ZIMBABWE)+263</option>
+                </select>
+                <input type="number" placeholder="enter mobile number">
+            </label>
+            <br>
+            </br>
+            <label>Type Message&nbsp;<textarea rows="7" placeholder="HOW CAN WE HELP YOU ?"></textarea></label>
+            <br>
+            </br>
+            <button id="send" type="submit" name="submit">Send</button>
+        </form>
+        <div class="fotter">
+            <ul>
+                <font size=4px>Address</font>
+                <li>Sirsa , Haryana</li>
+            </ul>
+            <ul>
+                <font size=4px>Gmail</font>
+                <li>divkamboj124@gmail.com</li>
+            </ul>
+            <ul>
+                <font size=4px>Contact Number</font>
+                <li>+919485643973</li>
+            </ul>
+            <ul><button>
+                    <form action="mailto:divkamboj124@gmail.com" method="subscribed">
+                        <label><input type="email" name="email" placeholder="enter your email" required></label><br>
+                        <font size=4px>Subscribe Me</font>
+                    </form>
+                </button></ul>
+            <u>
+                <li><a href="https://instagram.com/divyanshu_thind?igshid=ZGUzMzM3NWJiOQ=="><img
+                            src="data:image/png;base64,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"
+                            width="30px" height="30px"></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/divyanshu-thind-a7435a222"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAWlBMVEX///8AAABQUFDKysrNzc2FhYWqqqpqamr7+/u1tbUyMjLv7+/n5+fCwsKdnZ10dHTW1taMjIxeXl44ODhGRkZ7e3vg4OAXFxdZWVkfHx8JCQlBQUGVlZWkpKSSQE78AAAB20lEQVRoge2abZOCIBCAwzpE0VR86e36/3/zrFSUnLlbQHbm2uebjPRELQi77nYEQRAEQRAEQSAiS14VKvorqqh4KT14yyJlcNKidPRmsYX2RZy5iHNr74PcXsydxIxxnBE7jDpzFjNm91/bB5cmthGXHsSM2Uyuwou5gIulzQLyTgpfzfz82DY/t+tcHoHP6cqTuQKb3wOsVucL3AwPMWV8Qpr3sSKPYLMCmyNjwEOM7qHmyNW8H9u/Apt1f+hq7mqerb8fY27E2N4FNutnfBvafOlezQlQ7G5m18cCLKFzyoe5Jz2BvZ7MVvxbc9pEt+tG5u9kQM2vng/xiHdSCJkd2rU4cDZPm5pndB+Gi/4sUO91n7VTmLN5dL3Moy03H/z3UOakNbu9rTQbmVcOL+bqupF5heyEZTYHvalZLM4RZSiz4HFzU0fdIOswZjEcv+pp62CcfjczT7fp/VIY8yyhMc2wMOZZICdBzeKs75iCLIx5dheZyUxmMrub7x84ZjI7mI0c4HS6qRbf4/cIg+cAjbxnxQfOi6vZbi8empJm0RGe98TL9eLlt/Fy+nh1DLzaDWK9Cq9Gh1iXxKvFItafEWvuiO8Z7PDerXiA9T4JQRAEQRAEQRDW/AD2IR9FI5RDrQAAAABJRU5ErkJggg=="
+                            width="30px" height="30px"><br>get in touch</a>
+                </li>
+
+            </u>
+        </div>
+
+    </main>
+</body>
+
+</html>
