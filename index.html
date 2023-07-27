@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Divyanshu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            border-color:white;
+            border-style:double;
+            margin: 5px;
+            animation: borderanimo 2s infinite;
+        }
+        @keyframes borderanimo{
+            from{border-color: white;}
+            to{border-color: pink;box-shadow: 4px 4px 8px 16px red;}
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            margin: 40px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 23px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: rgb(250, 9, 9);
+            font-size: 1.03rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23 0px;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-family: Poppins;
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            border-color: black;
+            border-radius: 50px;
+            border-style: groove;
+            box-shadow: gold 4px 4px 20px;
+
+        }
+
+        .purple {
+            color: rgb(124, 15, 226);
+        }
+
+        .animo {
+            animation: mymove 1s infinite 2s;
+        }
+
+        @keyframes mymove {
+            0% {
+                color: orangered;
+            }
+
+            66% {
+                color: white;
+                text-shadow: gold 12px 12px 12px;
+            }
+
+            100% {
+                color: green;
+                text-shadow: red 12px 12px 12px;
+            }
+        }
+
+        #element {
+            color: orangered;
+        }
+
+        .secondsection {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .leftside {
+            width: 50%;
+
+        }
+
+        .rightside {
+            width: 50%;
+
+        }
+
+        #turn {
+            border-radius: 100px;
+            border-color: black 11px;
+            width: 170px;
+            ;
+            border-style: dashed;
+            animation: animo 1s infinite 1s;
+        }
+
+        @keyframes animo {
+            from {
+                border-color: burlywood;
+            }
+
+            to {
+                box-shadow: red;
+                border-color: red;
+            }
+        }
+
+        #para1 {
+            font-family: Lumanosimo;
+            font-size: 40px;
+            color: black;
+            text-shadow: gray 2px 2px 8px;
+            background-image: url("https://images.unsplash.com/photo-1595602881855-b1ce060f6673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+            background-color: white;
+            margin: 30px;
+            animation: motion 4s infinite 5s;
+            border-radius: 35px;
+            padding: 15px;
+            border-color: red;
+            border-style: double;
+        }
+
+        @keyframes motion {
+            from {
+                text-shadow: gray 2px 2px 8px;
+            }
+
+            to {
+                color: white;
+                text-shadow: red 4px 4px 16px;
+                transform: translate3d(10px 2);
+            }
+        }
+
+        .container ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            font-size: 80px;
+            margin: 10px;
+            font-weight: 700;
+            opacity: 0;
+            animation: titleanimo 2s infinite 1s;
+        }
+
+        @keyframes titleanimo {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .space {
+            padding-left: 20px;
+        }
+
+        .para2 {
+            background-color: black;
+            font-family: 'Playfair Display', serif;
+            margin: 45px;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 40px;
+            border-color: hotpink;
+            border-style: outset;
+            box-shadow: 2px 2px 2px 4px palegreen;
+        }
+
+        .para2:hover {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+            color: black;
+            animation: myymove 2s infinite 2s;
+        }
+
+        @keyframes myymove {
+            from {
+                text-shadow: none;
+            }
+
+            to {
+                text-shadow: 2px 2px 4px red;
+            }
+        }
+
+        .fotter {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            margin: 40px;
+        }
+
+        .fotter li {
+            list-style: none;
+        }
+
+        .fotter li:hover {
+            font-size: 1.05rem;
+            color: red;
+        }
+
+        button {
+            background-color: yellow;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            font-size: 1.05rem;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Divyanshu Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="contactmeform.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii, My name is <span class="purple">Divyanshu</span>
+                <div>And I am a passionate <div class="animo">Web Developer,</div>
+                </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OORl-Yyhqy_2uWSJYoOiDAcvQU1rlXSCBMAwMdNMNKSNJyVSh0ruofsA6O6QUccJoJs&usqp=CAU">
+            </div>
+        </section>
+        <section class="secondsection">
+            <div class="leftside">
+                <br>
+                &nbsp;
+                </br>
+                <hr style="width: 100%;">
+            </div>
+            <div class="centerside">
+                <img id="turn" src="vipuleditpic.jpg">
+            </div>
+            <div class="rightside">
+                <br>
+                </br>
+                <hr style="width: 100%" ;>
+            </div>
+        </section>
+        <div class="container">
+            <ul>
+                <li>D</li>
+                <li>i</li>
+                <li>v</li>
+                <li>y</li>
+                <li>a</li>
+                <li>n</li>
+                <li>s</li>
+                <li>h</li>
+                <li>u</li>
+                <li class="space">P</li>
+                <li>o</li>
+                <li>r</li>
+                <li>t</li>
+                <li>f</li>
+                <li>o</li>
+                <li>l</li>
+                <li>i</li>
+                <li>o</li>
+            </ul>
+        </div>
+        <p id="para1">As a web developer, I am a skilled professional who designs, builds, and maintains websites and
+            web applications. My passion lies in combining creativity with technical expertise to create functional and
+            visually appealing digital experiences. With a strong foundation in programming languages such as HTML, CSS,
+            and JavaScript, I am adept at transforming ideas and concepts into fully functional websites that meet the
+            needs of clients and users.</p>
+        <p class="para2">As a web developer, my ultimate goal is to make a positive impact on the digital world by
+            creating user-friendly, secure, and visually stunning websites that leave a lasting impression on visitors.
+            With a keen eye for detail and a passion for creating exceptional web experiences, I am dedicated to
+            contributing to the growth and success of businesses and individuals alike through my expertise in web
+            development.</p>
+        <div class="fotter">
+            <ul>
+                <font size=4px>Address</font>
+                <li>Sirsa , Haryana</li>
+            </ul>
+            <ul>
+                <font size=4px>Gmail</font>
+                <li>divkamboj124@gmail.com</li>
+            </ul>
+            <ul>
+                <font size=4px>Contact Number</font>
+                <li>+919485643973</li>
+            </ul>
+            <ul><button>
+                    <form action="mailto:divkamboj124@gmail.com" method="subscribed">
+                        <label><input type="email" name="email" placeholder="enter your email" required></label><br>
+                        <font size=4px>Subscribe Me</font>
+                    </form>
+                </button></ul>
+            <u>
+                <li><a href="https://instagram.com/divyanshu_thind?igshid=ZGUzMzM3NWJiOQ=="><img
+                            src="data:image/png;base64,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"
+                            width="30px" height="30px"></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/in/divyanshu-thind-a7435a222"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHkAAAB5CAMAAAAqJH57AAAAWlBMVEX///8AAABQUFDKysrNzc2FhYWqqqpqamr7+/u1tbUyMjLv7+/n5+fCwsKdnZ10dHTW1taMjIxeXl44ODhGRkZ7e3vg4OAXFxdZWVkfHx8JCQlBQUGVlZWkpKSSQE78AAAB20lEQVRoge2abZOCIBCAwzpE0VR86e36/3/zrFSUnLlbQHbm2uebjPRELQi77nYEQRAEQRAEQSAiS14VKvorqqh4KT14yyJlcNKidPRmsYX2RZy5iHNr74PcXsydxIxxnBE7jDpzFjNm91/bB5cmthGXHsSM2Uyuwou5gIulzQLyTgpfzfz82DY/t+tcHoHP6cqTuQKb3wOsVucL3AwPMWV8Qpr3sSKPYLMCmyNjwEOM7qHmyNW8H9u/Apt1f+hq7mqerb8fY27E2N4FNutnfBvafOlezQlQ7G5m18cCLKFzyoe5Jz2BvZ7MVvxbc9pEt+tG5u9kQM2vng/xiHdSCJkd2rU4cDZPm5pndB+Gi/4sUO91n7VTmLN5dL3Moy03H/z3UOakNbu9rTQbmVcOL+bqupF5heyEZTYHvalZLM4RZSiz4HFzU0fdIOswZjEcv+pp62CcfjczT7fp/VIY8yyhMc2wMOZZICdBzeKs75iCLIx5dheZyUxmMrub7x84ZjI7mI0c4HS6qRbf4/cIg+cAjbxnxQfOi6vZbi8empJm0RGe98TL9eLlt/Fy+nh1DLzaDWK9Cq9Gh1iXxKvFItafEWvuiO8Z7PDerXiA9T4JQRAEQRAEQRDW/AD2IR9FI5RDrQAAAABJRU5ErkJggg=="
+                            width="30px" height="30px"><br>Get in Touch</a>
+                </li>
+
+            </u>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <span id="element"></span>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer.', 'Video Editor.', ' Graphic Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
